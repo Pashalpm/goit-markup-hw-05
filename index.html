@@ -364,12 +364,59 @@
       </div>
     </div>
   </footer>
+
+  <!-----------------------------------  MODAL------------------------------>
   <div class="container-modal is-hidden" data-modal>
     <div class="modal">
-      <button class="modal-btn" type="button" data-modal-close><svg class="icon-modal" width="8" height="8">
+      <button class="modal-btn" type="button" data-modal-close><svg class="icon-modal-close" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
+
+      <!--------------------------- MODAL FORM ------------------------------------->
+      <div class="form-modal">
+        <strong class="modal-title"> Leave your contacts and we will call you back</strong>
+
+        <form class="modal-form" name="feedback_form">
+
+
+          <label class=" lab lab-name"><span class="molal-form-label">Name</span>
+            <input class="user-input" type="text" name="user-name">
+            <svg class=" icon-modal icon-modal-user" width="18" height="18">
+              <use href="./images/icons.svg#icon-user"></use>
+            </svg>
+          </label>
+
+
+          <label class=" lab lab-tel"><span class="molal-form-label">Phone</span>
+            <input class="user-input" type="tel" name="user-tel">
+            <svg class=" icon-modal icon-modal-tel" width="18" height="24">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+          </label>
+
+
+          <label class=" lab lab-mail"><span class="molal-form-label">Email</span>
+            <input class="user-input" type="email" name="user-mail">
+            <svg class=" icon-modal icon-modal-mail" width="18" height="24">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+          </label>
+
+          <!-------------------------COMENT--------------------->
+          <label for="lab">
+            <span class="form-coment">Comment</span>
+            <textarea class="form-coment-text" name="" id="" cols="30" rows="10" placeholder="Text input"></textarea>
+
+          </label>
+
+          <p class="modal-text">
+            I accept the terms and conditions of the <a class="link-priv-pol" href="">Privacy Policy</a>
+          </p>
+
+          <button class="btn-send" type="submit">Send</button>
+        </form>
+      </div>
     </div>
   </div>
   <script src="./js/modal.js"></script>
