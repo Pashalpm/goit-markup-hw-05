@@ -407,14 +407,20 @@
 
           <label class="lab-coment">
             <span class="form-coment">Comment</span>
-            <textarea class="form-coment-text" name="user-content" rows="10" placeholder="Text input"></textarea>
+            <textarea class="form-coment-text" name="user-content" rows="9" placeholder="Text input"></textarea>
           </label>
           <!--------------------CHECKBOX--------------------->
-
-          <p class="modal-text">
-            I accept the terms and conditions of the <a class="link-priv-pol" href="">Privacy Policy</a>
-          </p>
-
+          <label class="modal-form-agreement">
+            <input class="modal-form-checkbox visually-hidden" type="checkbox">
+            <span class="modal-form-custom-checkbox">
+              <svg class="modal-form-checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+            <span class="modal-form-agreement-desc">
+              I accept the terms and conditions of the <a class="modal-form-link" href="#">Privacy Policy</a>
+            </span>
+          </label>
           <button class="btn btn-send" type="submit">Send</button>
         </form>
       </div>
