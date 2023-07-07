@@ -836,21 +836,26 @@ img {
 }
 
 .lab {
-  position: relative;
-  padding: 0;
-  display: block;
-  margin-bottom: 4px;
-}
-
-.modal-form-label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
   letter-spacing: 0.48px;
+  position: relative;
+  /* padding: 0; */
+  line-height: 1.17;
   color: var(--color-icon);
 }
+
+
+
+.box-user-input {
+  position: relative;
+
+}
+
+
+.modal-form-label {}
 
 .user-input {
   display: block;
