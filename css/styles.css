@@ -544,7 +544,14 @@ img {
 
 /* ===========FUTER FORM======================== */
 
+.futer-form {
+  display: block;
+  /* position: relative; */
+}
+
 .futer-subscribe {
+  display: block;
+  /* position: relative; */
   color: var(--background-color);
   font-size: 16px;
   font-weight: 500;
@@ -554,10 +561,11 @@ img {
 }
 
 .futer-form-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* position: relative; */
+
 }
+
+
 
 .futer-form-mail {
   width: 264px;
@@ -569,7 +577,7 @@ img {
   letter-spacing: 0.48px;
   color: var(--background-color);
   background: var(--titlt-black-color);
-  border-color: 1px solid var(--background-color);
+  border-color: var(--background-color);
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-right: 24px;
@@ -578,11 +586,12 @@ img {
 
 .futer-form-mail::placeholder {
   color: var(--background-color);
-  border-color: 1px solid var(--background-color);
+  border-color: var(--background-color);
 }
 
 .futer-form-button {
-  display: flex;
+  display: inline-flex;
+  position: absolute;
   align-items: center;
   justify-content: space-between;
   width: 165px;
@@ -608,9 +617,7 @@ img {
   background-color: var(--hover-link-color);
 }
 
-.futer-form-button-icon {
-  /* margin-left: 16px; */
-}
+.futer-form-button-icon {}
 
 /**
   |============================
