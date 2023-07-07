@@ -545,13 +545,13 @@ img {
 /* ===========FUTER FORM======================== */
 
 .futer-form {
-  display: block;
-  /* position: relative; */
+
+  display: flex;
+  gap: 24px;
 }
 
 .futer-subscribe {
   display: block;
-  /* position: relative; */
   color: var(--background-color);
   font-size: 16px;
   font-weight: 500;
@@ -560,43 +560,34 @@ img {
   margin-bottom: 16px;
 }
 
-.futer-form-label {
-  /* position: relative; */
-
-}
-
-
-
 .futer-form-mail {
   width: 264px;
   height: 40px;
-  padding: 8px 16px;
+  padding-left: 16px;
   font-size: 12px;
   font-weight: 400;
   line-height: 2;
   letter-spacing: 0.48px;
-  color: var(--background-color);
-  background: var(--titlt-black-color);
-  border-color: var(--background-color);
+  border: 1px solid var(--background-color);
   border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-right: 24px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--background-color);
+  background-color: transparent;
+  border-color: var(--background-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .futer-form-mail::placeholder {
   color: var(--background-color);
-  border-color: var(--background-color);
+
 }
 
 .futer-form-button {
-  display: inline-flex;
-  position: absolute;
+  display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 165px;
   height: 40px;
-  padding: 0 24px;
   border-radius: 4px;
   font-family: var(--primary-font);
   background-color: var(--button-color);
@@ -608,7 +599,6 @@ img {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
-  border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -617,7 +607,9 @@ img {
   background-color: var(--hover-link-color);
 }
 
-.futer-form-button-icon {}
+.futer-form-button-icon {
+  margin-left: 16px;
+}
 
 /**
   |============================
