@@ -897,18 +897,6 @@ img {
   margin-bottom: 16px;
 }
 
-.label-coment {}
-
-.form-coment {
-  display: block;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.16;
-  letter-spacing: 0.48px;
-  color: var(--color-icon);
-  margin-bottom: 4px;
-}
-
 .form-coment-text {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -918,14 +906,13 @@ img {
   line-height: 1.17;
   letter-spacing: 0.48px;
   color: rgba(46, 47, 66, 0.4);
-  outline: transparent;
-  background-color: transparent;
   padding: 8px 16px;
   resize: none;
   background: var(--background-modal);
+  outline: transparent;
+  background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .form-coment-text:focus {
   border-color: var(--button-color);
@@ -949,23 +936,32 @@ img {
 
 }
 
-.modal-form-checkbox:checked+.modal-form-custom-checkbox>.modal-form-checkbox-icon {
+.modal-form-checkbox-icon {
+
+  opacity: 0;
+}
+
+.modal-form-checkbox:checked+.modal-form-agreement>.modal-form-custom-checkbox>.modal-form-checkbox-icon {
   opacity: 1;
 }
 
+.modal-form-checkbox:checked+.modal-form-agreement>.modal-form-custom-checkbox {
+  border: none;
+  background-color: var(--hover-link-color);
+  fill: var(--background);
+}
+
 .modal-form-custom-checkbox {
-  display: flex;
+
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
   height: 16px;
+  fill: transparent;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form-checkbox-icon {
-  opacity: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-agreement-desc {
@@ -973,18 +969,13 @@ img {
   color: var(--color-icon);
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.48px;
   user-select: none;
 }
 
 .modal-form-link {
   color: var(--button-color);
-}
-
-.modal-form-checkbox:checked+.modal-form-custom-checkbox {
-  border-color: var(--hover-link-color);
-  background-color: var(--hover-link-color);
 }
 
 /**
@@ -1007,5 +998,5 @@ img {
   border-radius: 4px;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
